@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Votre demande de crédit chez Home Credit </title>    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./static/css/font-awesome.min.css">
+    <!-- NProgress -->
+    <link rel="stylesheet" href="./static/css/nprogress.css">
+    <!-- Custom styling plus plugins -->
+    <link rel="stylesheet" href="./static/css/custom.min.css">
+    <style>
+        body {
+            background-image: url("./static/images/forest-2560x1440-5k-4k-wallpaper-8k-mist-hills-fog-6505.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .content-container {
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1, h2, h3, label {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 50px;
+        }
+        h3 {
+            color: rgb(255, 255, 255);
+        }
+        h2 {
+            color: white;
+        }
+        label {
+            color: white;
+        }
+        form {
+            margin-top: 30px;
+        }
+        #client_id {
+            padding: 10px;
+            border: 1px solid #d9d5d5;
+            border-radius: 5px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #7e8f7f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Votre demande de crédit chez Home Credit</h1>
+        <p>Vous avez récemment fait une demande de prêt dans nos services ?
+        Nous pouvons vous prédire votre score crédit compris entre 0 et 100. Si votre score est inférieur à 50/100, nous vous conseillons de vous rapprocher de votre conseiller pour discuter de votre projet.</p>
+        <form action="/Dashboard/" method="POST">
+            <label for="client_id">Votre identifiant : </label>
+            <input type="text" id="client_id" name="client_id">
+            <button type="submit"> OK </button>
+        </form>
+    </div>
+</body>
+</html>
+
