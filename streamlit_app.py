@@ -36,7 +36,7 @@ sv_total, df_pp = MyModule_p7.feat_local(df_pp)
 #------------------------------------------------------------
 #Les données propre au client  _________________________________
 # Read data from the JSON file
-api_url = 'https://sleepy-waters-17464-030b06eb8dbd.herokuapp.com/Dashboard/'
+api_url = 'https://sleepy-waters-17464-030b06eb8dbd.herokuapp.com/Dashboard_st/'
 response= requests.get(api_url)
 if response.status_code == 200:
     data = response.json()
