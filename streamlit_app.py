@@ -8,7 +8,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.graph_objs as go
 import plotly.express as px
-from flask import Flask, request, jsonify,  send_file, render_template
+from flask import Flask, request, jsonify,  send_file, render_template, redirect
 from projet7package.frequency_encode import frequency_encode
 import json
 import shap
@@ -32,7 +32,9 @@ classification_model = joblib.load('LightGBM_bestmodel.pkl')
 df_pp = loaded_preprocess.transform(df)
 sv_total, df_pp = MyModule_p7.feat_local(df_pp)
 
-
+# Create an iframe to embed the welcome page
+welcome_url = "https://sleepy-waters-17464-030b06eb8dbd.herokuapp.com/"
+st.components.v1.iframe(welcome_url, height=600, scrolling=True)
 #------------------------------------------------------------
 #Les données propre au client  _________________________________
 # Read data from the JSON file
