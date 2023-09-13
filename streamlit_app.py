@@ -43,7 +43,7 @@ response= requests.get(api_url)
 if response.status_code == 200:
     data = response.json()
 else:
-    st.error("Failed to fetch data from the API.")
+    st.error("Veuillez entrer un identifiant et actualiser la page")
 
 # Extraction des données utiles
 client_id = data.get("client_id")
